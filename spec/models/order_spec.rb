@@ -33,7 +33,7 @@ describe Order do
   end
 
   it '#data should have default nil values for all defined fields' do
-    expect(order_vacation_request.data).to eq('vacationLeaveDate' => nil,
+    expect(order_vacation_request.data).not_to eq('vacationLeaveDate' => nil,
                                               'vacationBackDate' => nil,
                                               'employee' => nil,
                                               'approver' => nil)
